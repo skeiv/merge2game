@@ -4,21 +4,11 @@ namespace merge2game.FormElements;
 
 public class Field : Panel
 {
-    private static Field _instance;
     public List<Cell> Cells { get; }
 
-    private Field()
+    public Field()
     {
         Cells = new List<Cell>();
-    }
-
-    public static Field GetInstance()
-    {
-        if (_instance == null)
-        {
-            _instance = new Field();
-        }
-        return _instance;
     }
 
     public void InitializeCells()

@@ -30,7 +30,7 @@ namespace merge2game.Views
         /// </summary>
         private void InitializeComponent()
         {
-            this.GameField = merge2game.FormElements.Field.GetInstance();
+            this.GameField = new Field();
             
             // 
             // GameField
